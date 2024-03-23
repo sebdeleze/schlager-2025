@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="flex flex-col gap-8">
+        <header class="bg-cover" style="background-image: url('{{ asset('images/header.jpg') }}')">
+            <div class="backdrop-brightness-50 bg-black/30 w-full h-full">
+                <div class="absolute top-5 left-5 text-white flex gap-4 justify-center">
+                    <a href="https://www.facebook.com/profile.php?id=61552985874974" target="_blank">
+                        <svg class="w-10 h-10">
+                            <use href="{{ asset('symbol-defs.svg#facebook') }}"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/apresskivalais" target="_blank">
+                        <svg class="w-10 h-10">
+                            <use href="{{ asset('symbol-defs.svg#instagram') }}"></use>
+                        </svg>
+                    </a>
+                </div>
+                <svg class="absolute w-16 h-16 top-5 right-5">
+                    <use href="{{ asset('symbol-defs.svg#u18') }}"></use>
+                </svg>
+                <div class="h-full p-8 flex flex-col justify-center items-center gap-6 text-white">
+                    <div>
+                        <a href="{{ path('app_default_index') }}">
+                            <img src="{{ asset('images/logo.svg') }}" class="" alt="Schlager Festival">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-heading font-bold text-center">Schlager Festival</div>
+                    </div>
+                    <div class="text-5xl text-center font-heading">5 avril 2025</div>
+                    <div class="text-xl text-center font-heading">Salle Polyvalente Conthey (VS)</div>
+                    <div class="flex flex-col md:flex-row justify-center items-center font-semibold text-xl">
+                        <div>Marry</div>
+                        <div class="hidden md:block text-primary">
+                            <svg class="w-10 h-10">
+                                <use href="{{ asset('symbol-defs.svg#dot') }}"></use>
+                            </svg>
+                        </div>
+                        <div>Nancy Franck</div>
+                        <div class="hidden md:block text-primary">
+                            <svg class="w-10 h-10">
+                                <use href="{{ asset('symbol-defs.svg#dot') }}"></use>
+                            </svg>
+                        </div>
+                        <div>Der Zipfelbube</div>
+                        <div class="hidden md:block text-primary">
+                            <svg class="w-10 h-10">
+                                <use href="{{ asset('symbol-defs.svg#dot') }}"></use>
+                            </svg>
+                        </div>
+                        <div>Manni Manta</div>
+                        <div class="hidden md:block text-primary">
+                            <svg class="w-10 h-10">
+                                <use href="{{ asset('symbol-defs.svg#dot') }}"></use>
+                            </svg>
+                        </div>
+                        <div>DJ Biene</div>
+                    </div>
+                    <div>
+                        <a href="https://billetterie.apres-ski-party.ch" target="_blank" class="uppercase text-white bg-primary py-3 px-5 rounded-md font-semibold inline-block">Acheter mon billet</a>
+                    </div>
+                    <div class="flex flex-row gap-4 justify-center items-center flex-wrap">
+                        <a href="{{ path('app_default_program') }}">Programmation</a>
+                        <a href="{{ path('app_default_sponsors') }}">Sponsors</a>
+                        <a href="{{ path('app_default_mobility') }}">Mobilité</a>
+                        <a href="{{ path('app_default_about') }}">A propos de nous</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div>
+            {% block content %}{% endblock %}
+        </div>
+        <footer class="bg-primary p-8 flex flex-col gap-6 text-white justify-center items-center">
+            <div>
+                <img src="{{ asset('images/logo.svg') }}" class="" alt="Schlager Festival">
+            </div>
+            <div>
+                <div class="text-3xl font-heading font-bold text-center">Schlager Festival</div>
+            </div>
+            <div class="font-semibold">admin@lesamisdelaschlager.ch</div>
+            <div class="flex gap-4 justify-center">
+                <a href="https://www.facebook.com/profile.php?id=61552985874974" target="_blank">
+                    <svg class="w-12 h-12">
+                        <use href="{{ asset('symbol-defs.svg#facebook') }}"></use>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/apresskivalais" target="_blank">
+                    <svg class="w-12 h-12">
+                        <use href="{{ asset('symbol-defs.svg#instagram') }}"></use>
+                    </svg>
+                </a>
+            </div>
+        </footer>
+    </div>
+{% endblock %}

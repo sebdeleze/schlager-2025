@@ -1,0 +1,103 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block content %}
+    <div class="flex flex-col gap-12">
+        <div class="content">
+            <h1>Sponsors</h1>
+            <div class="w-2/3 md:w-1/3 mx-auto">
+                <img src="{{ asset('images/sponsors/carrosserie-berner.png') }}" class="rounded" alt="Carrosserie Berner">
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:w-2/3 mx-auto items-center">
+                <div>
+                    <img src="{{ asset('images/sponsors/bornet-transport.jpg') }}" class="w-36 rounded" alt="Bornet Transports">
+                </div>
+                <div>
+                    <img src="{{ asset('images/sponsors/ciampitti.jpg') }}" alt="Ciampitti">
+                </div>
+                <div>
+                    <img src="{{ asset('images/sponsors/iomedia.png') }}" alt="iomedia">
+                </div>
+                <div>
+                    <img src="{{ asset('images/sponsors/gilliard.png') }}" alt="Gilliard">
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary py-12">
+            <div class="content text-white text-center">
+                <h1>Programme de la soirée</h1>
+                <div class="flex flex-col gap-2">
+                    <h2>17h00</h2>
+                    <div>
+                        <p>Apéritif "Sponsors"</p>
+                        <p class="text-sm italic">(possibilité de réseautage)</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h2>18h00</h2>
+                    <div>
+                        <p>Ouverture des portes</p>
+                        <p class="text-sm italic">(exclusivement réservé aux personnes participant au souper)</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h2>19h00-21h00</h2>
+                    <div>
+                        <p>Choucroute artisanale de Champex-Lac - 6 sortes de viande</p>
+                        <p class="text-sm italic">(repas sur réservation)</p>
+                        <br>
+                        <p>1 bouteille de vin + eau minérale pour 4 personnes</p>
+                        <p>Dessert + Café « Schnaps »</p>
+                        <p>Prix : CHF 90.- par personne</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h2>Dès 21h00</h2>
+                    <div>
+                        <p>Ouverture des portes (tout public) - DJ-concerts</p>
+                        <p>Prix : CHF 35.00 (CHF 30.00 en pré-location) par personne</p>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h2>03h00</h2>
+                    <div>
+                        <p>Fin de la soirée</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text-center flex flex-col gap-10 justify-center md:flex-row">
+                <div class="bg-gray-100 text-primary p-10 border border-primary rounded-lg basis-auto md:basis-1/3">
+                    <div>Choucroute royale et soirée</div>
+                    <div class="font-semibold text-2xl mt-2 font-heading">90 CHF</div>
+                </div>
+                <div class="bg-gray-100 text-primary p-10 border border-primary rounded-lg basis-auto md:basis-1/3">
+                    <div>Soirée uniquement - DJ - Concerts</div>
+                    <div class="font-semibold text-2xl mt-2 font-heading">35 CHF<br><span class="text-sm">30 CHF en pré-location</span></div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="https://billetterie.apres-ski-party.ch" target="_blank" class="uppercase text-white bg-primary py-3 px-5 rounded-md font-semibold inline-block">Commander mon billet</a>
+            </div>
+        </div>
+        <div class="bg-primary py-12">
+            <div class="content text-white">
+                <div class="w-full md:w-2/3 mx-auto text-center">
+                    <h2>Rendez-vous à la <br>Salle Polyvalente de Conthey</h2>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Recherche de bénévoles</h1>
+            <div class="flex flex-col gap-2 text-center">
+                <p>Nous avons besoin de vous pour que cette soirée soit une réussite.</p>
+                <p>Si tu es intéressé(e) à nous aider d'une quelconque manière, tu peux t'inscrire sur le lien suivant:</p>
+                <p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfME5jHTKK3JUl2_U4RzMGVgytX0hkXanMo1uQhPolFezuszQ/viewform?usp=pp_url" target="_blank" class="uppercase text-white bg-primary py-3 px-5 rounded-md font-semibold inline-block">Inscription</a>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

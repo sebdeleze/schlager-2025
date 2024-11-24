@@ -37,4 +37,10 @@ class DefaultController extends AbstractController
     {
         return $this->render('default/sponsors.html.twig');
     }
+
+    #[Route('/edition-2024', name: 'app_default_gallery')]
+    public function gallery(): Response
+    {
+        return $this->render('default/gallery.html.twig');
+    }
 }

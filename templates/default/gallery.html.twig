@@ -1,0 +1,89 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Edition 2024{% endblock %}
+
+{% block content %}
+    <div class="content">
+        <h1>Edition 2024</h1>
+        <h2>Vidéos</h2>
+        <div class="grid md:grid-cols-2 gap-4">
+            <div>
+                <video class="w-full aspect-video rounded-lg" controls>
+                    <source src="{{ asset('videos/video1.mov') }}">
+                </video>
+            </div>
+            <div>
+                <video class="w-full aspect-video rounded-lg" controls>
+                    <source src="{{ asset('videos/video2.mov') }}">
+                </video>
+            </div>
+            <div>
+                <video class="w-full aspect-video rounded-lg" controls>
+                    <source src="{{ asset('videos/video3.mov') }}">
+                </video>
+            </div>
+            <div>
+                <video class="w-full aspect-video rounded-lg" controls>
+                    <source src="{{ asset('videos/video4.mov') }}">
+                </video>
+            </div>
+            <div>
+                <video class="w-full aspect-video rounded-lg" controls>
+                    <source src="{{ asset('videos/video5.mov') }}">
+                </video>
+            </div>
+            <div>
+                <video class="w-full aspect-video rounded-lg" controls>
+                    <source src="{{ asset('videos/video7.mp4') }}">
+                </video>
+            </div>
+            <div>
+                <video class="w-full aspect-video rounded-lg" controls>
+                    <source src="{{ asset('videos/video8.mp4') }}">
+                </video>
+            </div>
+            <div>
+                <video class="w-full aspect-video rounded-lg" controls>
+                    <source src="{{ asset('videos/video9.mp4') }}">
+                </video>
+            </div>
+            <div>
+                <video class="w-full aspect-video rounded-lg" controls>
+                    <source src="{{ asset('videos/video10.mov') }}">
+                </video>
+            </div>
+        </div>
+        <h2>Photos</h2>
+        <div class="grid md:grid-cols-2 gap-4">
+            <div>
+                <img class="rounded-lg" src="{{ asset('images/gallery/image8.jpg') }}" alt="">
+            </div>
+            <div>
+                <img class="rounded-lg" src="{{ asset('images/gallery/image9.jpg') }}" alt="">
+            </div>
+            <div>
+                <img class="rounded-lg" src="{{ asset('images/gallery/image1.jpg') }}" alt="">
+            </div>
+            <div>
+                <img class="rounded-lg" src="{{ asset('images/gallery/image2.jpg') }}" alt="">
+            </div>
+            <div>
+                <img class="rounded-lg" src="{{ asset('images/gallery/image3.jpg') }}" alt="">
+            </div>
+            <div>
+                <img class="rounded-lg" src="{{ asset('images/gallery/image4.jpg') }}" alt="">
+            </div>
+            <div>
+                <img class="rounded-lg" src="{{ asset('images/gallery/image5.jpg') }}" alt="">
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <img class="rounded-lg" src="{{ asset('images/gallery/image6.jpg') }}" alt="">
+                </div>
+                <div>
+                    <img class="rounded-lg" src="{{ asset('images/gallery/image7.jpg') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

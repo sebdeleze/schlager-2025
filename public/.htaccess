@@ -24,6 +24,10 @@ DirectoryIndex index.php
 
     RewriteEngine On
 
+    RewriteCond %{HTTP_HOST} ^billetterie\.apres-ski-party\.ch$ [NC]
+    RewriteRule ^(.*)$ https://infomaniak.events/shop/U7ONOJPQk2 [L,R=302]
+
+
     # Determine the RewriteBase automatically and set it as environment variable.
     # If you are using Apache aliases to do mass virtual hosting or installed the
     # project in a subdirectory, the base path will be prepended to allow proper

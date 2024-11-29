@@ -38,6 +38,12 @@ class DefaultController extends AbstractController
         return $this->render('default/sponsors.html.twig');
     }
 
+    #[Route('/benevoles', name: 'app_default_volunteers')]
+    public function volunteers(): Response
+    {
+        return $this->render('default/volunteers.html.twig');
+    }
+
     #[Route('/edition-2024', name: 'app_default_gallery')]
     public function gallery(): Response
     {
